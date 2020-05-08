@@ -7,11 +7,24 @@
             [formControl]="myForm.controls['nome']" class="form-control">
    </div>
 
-   <div class="form-group">
+		<div class="form-group">
 			<label for="skuInput">Colore</label>
 			<input type="text" id="coloreInput" placeholder="viola" name="colore"
             [formControl]="myForm.controls['colore']" class="form-control">
    </div>
-			<button type="submit" class="btn btn-primary">Submit</button>
+
+		<div class="form-group">
+			<label for="skuInput">Altezza</label>
+			<input type="text" id="altezzaInput" placeholder="alto" name="altezza"
+            [formControl]="myForm.controls['altezza']" class="form-control">
+   </div>
+
+   <div class="form-group">
+			<label for="skuInput">Numero petali</label>
+			<input type="text" id="numeroInput" placeholder="10" name="numero"
+            [formControl]="myForm.controls['numero']" class="form-control">
+   </div>
+
+		<button type="submit" class="btn btn-primary">Submit</button>
 	</form>
 </div>
