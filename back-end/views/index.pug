@@ -1,0 +1,11 @@
+block content
+  h1= title
+  p Welcome to #{title}
+
+  form(method='POST' action='/users/inserisci')
+    div  
+      label(for='ID') id:
+      br
+      input(type='number', placeholder='id' name='ID')
+    div  
+    button(type='submit') Invia

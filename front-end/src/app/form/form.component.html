@@ -1,30 +1,55 @@
 <div class="container">
-	<h2>Fiore</h2>
+	<h2>Inserisci fiori</h2>
 	<form [formGroup]="myForm" (ngSubmit)="onSubmit(myForm.value)" class="jumbotron">
+
 		<div class="form-group">
-			<label for="nomeInput">Nome</label>
-			<input type="text" id="nomeInput" placeholder="fiore" name="nome"
-            [formControl]="myForm.controls['nome']" class="form-control">
+			<label for="nomeInput">ID</label>
+			<input type="text" id="idInput" placeholder="1" name="id"
+          [formControl]="myForm.controls['id']" class="form-control">
    </div>
 
 		<div class="form-group">
-			<label for="skuInput">Colore</label>
-			<input type="text" id="coloreInput" placeholder="viola" name="colore"
-            [formControl]="myForm.controls['colore']" class="form-control">
+			<label for="nomeInput">Nome</label>
+			<input type="text" id="nomeInput" placeholder="nome" name="nome"
+         [formControl]="myForm.controls['nome_comune']" class="form-control">
    </div>
 
 		<div class="form-group">
 			<label for="skuInput">Altezza</label>
-			<input type="text" id="altezzaInput" placeholder="alto" name="altezza"
-            [formControl]="myForm.controls['altezza']" class="form-control">
+			<input type="text" id="coloreInput" placeholder="alto/cm" name="altezza"
+        [formControl]="myForm.controls['altezza']" class="form-control">
    </div>
 
-   <div class="form-group">
-			<label for="skuInput">Numero petali</label>
-			<input type="text" id="numeroInput" placeholder="10" name="numero"
-            [formControl]="myForm.controls['numero']" class="form-control">
+		<div class="form-group">
+			<label for="skuInput">Periodo fioritura</label>
+			<input type="text" id="periodoInput" placeholder="primavera" name="periodo"
+        [formControl]="myForm.controls['periodo']" class="form-control">
    </div>
 
-		<button type="submit" class="btn btn-primary">Submit</button>
+		<div class="form-group">
+			<label for="skuInput">Note</label>
+			<input type="text" id="noteInput" placeholder="note" name="note"
+        [formControl]="myForm.controls['note']" class="form-control">
+   </div>
+
+<!--<div class="form-group">
+			<label for="skuInput">Immagine</label>
+			<input type="text" id="noteInput" placeholder="note" name="note"
+            [formControl]="myForm.controls['note']" class="form-control">
+   </div> -->
+
+		<div class="form-group">
+			<label for="skuInput">Famiglia di appartenenza</label>
+			<input type="text" id="famigliaInput" placeholder="famiglia" name="famiglia"
+          [formControl]="myForm.controls['famiglia']" class="form-control">
+   </div>
+
+		<div class="form-group">
+			<label for="skuInput">Nome scientifico</label>
+			<input type="text" id="scientInput" placeholder="scient" name="scient"
+          [formControl]="myForm.controls['scient']" class="form-control">
+   </div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
 	</form>
 </div>
