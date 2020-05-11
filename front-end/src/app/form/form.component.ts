@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {  //Importa FormBuilder e FormGroup
+import {
   FormBuilder,
   FormGroup
 } from '@angular/forms';
@@ -11,11 +11,8 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 })
 
 export class FormComponent implements OnInit {
-  myForm: FormGroup;  //Dichiara una variabile di tipo FormGroup
-  constructor(fb: FormBuilder,private http:HttpClient) { //Il costruttore riceve come parametro il From Builder
-
-    /*Diciamo al FormBuilder di creare un FormGroup che conterrà un FormControl
-     *Chiamato sku, con valore di default ABC123 */
+  myForm: FormGroup;
+  constructor(fb: FormBuilder, private http:HttpClient) {
     this.myForm = fb.group({
       'id': ['123'],
       'nome_comune': ['abc'],
@@ -31,7 +28,6 @@ export class FormComponent implements OnInit {
   onSubmit(value: string): void {
     console.log('you submitted value: ', value);
     let headers = {headers: new HttpHeaders().set('Content-Type', 'application/json')};
-    this.http.post('https://3000-a0a65d53-ab3e-4aab-97e1-0a738189b07d.ws-eu01.gitpod.io/users/inserisci',(value),headers);
-
+    this.http.post('https://3000-a0a65d53-ab3e-4aab-97e1-0a738189b07d.ws-eu01.gitpod.io/users/inserisci', value, headers);
   }
 }

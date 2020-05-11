@@ -27,7 +27,7 @@ router.post('/inserisci', function (req, res, next) {
   // Add a new Unit  
   let unit = req.body;
   if (!unit) {
-    next(createError(400 , "Please provide a correct unit"));
+    next(createError(400 , "Please provide a correct flower"));
   }
   sql.connect(config, err => {
     let sqlInsert = `INSERT INTO dbo.[Fiore] (ID,Nome_Comune,Altezza,Colore,Periodo_Fioritura,Note,URL_Immagine,Famiglia_Appartenenza,Nome_Scientifico) 
@@ -35,7 +35,7 @@ router.post('/inserisci', function (req, res, next) {
     let sqlRequest = new sql.Request();
     sqlRequest.query(sqlInsert, (error, results) => {
       if (error) throw error;
-      return res.send({ error: false, data: results, message: 'Un nuovo fiore è stato aggiunto con successo!.' });
+      return res.send({ error: false, data: results, message: 'Un nuovo fiore è stato aggiunto con successo!:)' });
     });
   })
 });
