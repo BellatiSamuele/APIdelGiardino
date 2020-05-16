@@ -13,19 +13,8 @@ import { Fiore } from './fiore.model'
 })
 
 export class FormComponent implements OnInit {
-  myForm: FormGroup;
-  constructor(fb: FormBuilder, private http: HttpClient) {
-    this.myForm = fb.group({
-      'id': [],
-      'nome_comune': [],
-      'altezza': [],
-      'periodo': [],
-      'note': [],
-      'famiglia': [],
-      'scient': [],
-      'colore': [],
-      'url' : []
-    });
+
+  constructor(private http: HttpClient) {
 
   }
   ngOnInit() {
