@@ -1,5 +1,5 @@
 <form>
-	<h3>Add a Unit</h3>
+	<h3>Aggiungi un fiore!</h3>
 	<div>
 		<label for="id">ID: </label>
 		<input name="ID" #newID>
@@ -16,27 +16,27 @@
   </div>
 
   <div>
-		<label for="periodo">periodo di fioritura </label>
+		<label for="periodo">Periodo di fioritura </label>
 		<input name="Periodo_Fioritura" #newPeriodo>
   </div>
 
   <div>
-		<label for="note">note:  </label>
+		<label for="note">Note: </label>
 		<input name="Note" #newNote>
   </div>
 
   <div>
-		<label for="colore">colore: </label>
+		<label for="colore">Colore: </label>
 		<input name="Colore" #newColore>
   </div>
 
   <div>
-		<label for="url">url immagine: </label>
+		<label for="url">URL immagine: </label>
 		<input name="URL_Immagine" #newUrl>
   </div>
 
   <div>
-		<label for="famiglia">famiglia: </label>
+		<label for="famiglia">Famiglia: </label>
 		<input name="Famiglia_Appartenenza" #newFamiglia>
   </div>
 
@@ -45,7 +45,7 @@
 		<input name="Nome_Scientifico" #newScient>
   </div>
 
-		<button (click)="addUnit(newID, newNome, newAltezza, newColore, newFamiglia, newNote, newPeriodo, newUrl, newScient)">
-  Insert new unit
+		<button (click)="addFiore(newID, newNome, newAltezza, newColore, newFamiglia, newNote, newPeriodo, newUrl, newScient)">
+  Inserisci
   </button>
 </form>

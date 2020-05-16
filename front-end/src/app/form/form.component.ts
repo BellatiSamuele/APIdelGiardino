@@ -5,7 +5,7 @@ import {
 } from '@angular/forms';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { Unit } from './unit.model'
+import { Fiore } from './fiore.model'
 @Component({
   selector: 'app-form',
   templateUrl: './form.component.html',
@@ -31,9 +31,9 @@ export class FormComponent implements OnInit {
   ngOnInit() {
   }
 
-  addUnit(newID: HTMLInputElement, newNome: HTMLInputElement, newAltezza: HTMLInputElement, newPeriodo: HTMLInputElement, newNote: HTMLInputElement, newColore: HTMLInputElement, newUrl: HTMLInputElement, newFamiglia: HTMLInputElement, newScient: HTMLInputElement): boolean {
+  addFiore(newID: HTMLInputElement, newNome: HTMLInputElement, newAltezza: HTMLInputElement, newPeriodo: HTMLInputElement, newNote: HTMLInputElement, newColore: HTMLInputElement, newUrl: HTMLInputElement, newFamiglia: HTMLInputElement, newScient: HTMLInputElement): boolean {
 
-    let newData: Unit = new Unit();
+    let newData: Fiore = new Fiore();
     newData.ID = Number(newID.value);
     newData.Nome_Comune = newNome.value;
     newData.Altezza = newAltezza.value;

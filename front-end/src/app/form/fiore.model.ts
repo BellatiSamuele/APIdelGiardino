@@ -1,4 +1,4 @@
-export class Unit{
+export class Fiore{
   public ID: number;
   public Nome_Comune: string;
   public Altezza: string;
