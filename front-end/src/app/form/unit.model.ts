@@ -1,5 +1,5 @@
 export class Unit{
-  public ID: string;
+  public ID: number;
   public Nome_Comune: string;
   public Altezza: string;
   public Colore: string;
