@@ -1,55 +1,51 @@
-<div class="container">
-	<h2>Inserisci fiori</h2>
-	<form [formGroup]="myForm" (ngSubmit)="onSubmit(myForm.value)" class="jumbotron">
+<form>
+	<h3>Add a Unit</h3>
+	<div>
+		<label for="id">ID: </label>
+		<input name="ID" #newID>
+  </div>
 
-		<div class="form-group">
-			<label for="nomeInput">ID</label>
-			<input type="text" id="idInput" placeholder="1" name="id"
-          [formControl]="myForm.controls['id']" class="form-control">
-   </div>
+  <div>
+		<label for="nome_comune">Nome comune: </label>
+		<input name="Nome_Comune" #newNome>
+  </div>
 
-		<div class="form-group">
-			<label for="nomeInput">Nome</label>
-			<input type="text" id="nomeInput" placeholder="nome" name="nome"
-         [formControl]="myForm.controls['nome_comune']" class="form-control">
-   </div>
+  <div>
+		<label for="altezza">Altezza: </label>
+		<input name="Altezza" #newAltezza>
+  </div>
 
-		<div class="form-group">
-			<label for="skuInput">Altezza</label>
-			<input type="text" id="coloreInput" placeholder="alto/cm" name="altezza"
-        [formControl]="myForm.controls['altezza']" class="form-control">
-   </div>
+  <div>
+		<label for="periodo">periodo di fioritura </label>
+		<input name="Periodo_Fioritura" #newPeriodo>
+  </div>
 
-		<div class="form-group">
-			<label for="skuInput">Periodo fioritura</label>
-			<input type="text" id="periodoInput" placeholder="primavera" name="periodo"
-        [formControl]="myForm.controls['periodo']" class="form-control">
-   </div>
+  <div>
+		<label for="note">note:  </label>
+		<input name="Note" #newNote>
+  </div>
 
-		<div class="form-group">
-			<label for="skuInput">Note</label>
-			<input type="text" id="noteInput" placeholder="note" name="note"
-        [formControl]="myForm.controls['note']" class="form-control">
-   </div>
+  <div>
+		<label for="colore">colore: </label>
+		<input name="Colore" #newColore>
+  </div>
 
-<!--<div class="form-group">
-			<label for="skuInput">Immagine</label>
-			<input type="text" id="noteInput" placeholder="note" name="note"
-            [formControl]="myForm.controls['note']" class="form-control">
-   </div> -->
+  <div>
+		<label for="url">url immagine: </label>
+		<input name="URL_Immagine" #newUrl>
+  </div>
 
-		<div class="form-group">
-			<label for="skuInput">Famiglia di appartenenza</label>
-			<input type="text" id="famigliaInput" placeholder="famiglia" name="famiglia"
-          [formControl]="myForm.controls['famiglia']" class="form-control">
-   </div>
+  <div>
+		<label for="famiglia">famiglia: </label>
+		<input name="Famiglia_Appartenenza" #newFamiglia>
+  </div>
 
-		<div class="form-group">
-			<label for="skuInput">Nome scientifico</label>
-			<input type="text" id="scientInput" placeholder="scient" name="scient"
-          [formControl]="myForm.controls['scient']" class="form-control">
-   </div>
+  <div>
+		<label for="scient">Nome scientifico </label>
+		<input name="Nome_Scientifico" #newScient>
+  </div>
 
-  <button type="submit" class="btn btn-primary">Submit</button>
-	</form>
-</div>
+		<button (click)="addUnit(newID)">
+  Insert new unit
+  </button>
+</form>

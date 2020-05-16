@@ -6,6 +6,7 @@ import {   //Importare le funzionalità nella nostra applicazione
 } from '@angular/forms';
 import { AppComponent } from './app.component';
 import { FormComponent } from './form/form.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { FormComponent } from './form/form.component';
   imports: [
     BrowserModule,
     FormsModule,
-    ReactiveFormsModule],
+    ReactiveFormsModule,
+    HttpClientModule],
   providers: [],
   bootstrap: [AppComponent]
 })

@@ -23,6 +23,7 @@ router.get('/fiori', function(req, res, next) {
 });
 
 router.post('/inserisci', function (req, res, next) {
+  console.log("ciao");
   console.log(req.body);
   // Add a new Unit  
   let unit = req.body;
