@@ -7,7 +7,6 @@ const config = {
   server: "213.140.22.237",  
   database: 'bissoli.marco', 
 }
-//ciao
 
 router.get('/form', function(req, res, next) {
   res.render('/');
@@ -27,7 +26,6 @@ router.get('/fiori', function(req, res, next) {
 });
 
 router.post('/inserisci', function (req, res, next) {
-  console.log("ciao");
   console.log(req.body);
    
   let fiore = req.body;
@@ -40,7 +38,7 @@ router.post('/inserisci', function (req, res, next) {
     let sqlRequest = new sql.Request();
     sqlRequest.query(sqlInsert, (error, results) => {
       if (error) throw error;
-      return res.send({ error: false, data: results, message: 'Un nuovo fiore è stato aggiunto con successo!:)' });
+      res.send({ error: false, data: results, message: 'Un nuovo fiore è stato aggiunto con successo!'});
     });
   })
 });

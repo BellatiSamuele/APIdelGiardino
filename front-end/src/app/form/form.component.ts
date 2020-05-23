@@ -1,16 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import {
   FormBuilder,
   FormGroup
 } from '@angular/forms';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { Fiore } from './fiore.model'
+import { Fiore } from './fiore.model';
+
 @Component({
   selector: 'app-form',
   templateUrl: './form.component.html',
   styleUrls: ['./form.component.css']
 })
+
 
 export class FormComponent implements OnInit {
 
@@ -19,6 +21,7 @@ export class FormComponent implements OnInit {
   }
   ngOnInit() {
   }
+
 
   addFiore(newID: HTMLInputElement, newNome: HTMLInputElement, newAltezza: HTMLInputElement, newPeriodo: HTMLInputElement, newNote: HTMLInputElement, newColore: HTMLInputElement, newUrl: HTMLInputElement, newFamiglia: HTMLInputElement, newScient: HTMLInputElement): boolean {
 
