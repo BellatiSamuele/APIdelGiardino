@@ -34,8 +34,8 @@ router.post('/inserisci', function (req, res, next) {
     next(createError(400 , "Please provide a correct flower"));
   }
   sql.connect(config, err => {
-    let sqlInsert = `INSERT INTO dbo.[Fiore] (ID,Nome_Comune,Altezza,Colore,Periodo_Fioritura,Note,URL_Immagine,Famiglia_Appartenenza,Nome_Scientifico) 
-                     VALUES ('${fiore.ID}','${fiore.Nome_Comune}','${fiore.Altezza}','${fiore.Colore}','${fiore.Periodo_Fioritura}','${fiore.Note}','${fiore.URL_Immagine}','${fiore.Famiglia_Appartenenza}','${fiore.Nome_Scientifico}')`;
+    let sqlInsert = `INSERT INTO dbo.[Fiore] (ID,Nome_Comune,Altezza,Periodo_Fioritura,Note,Colore,URL_Immagine,Famiglia_Appartenenza,Nome_Scientifico) 
+                     VALUES ('${fiore.ID}','${fiore.Nome_Comune}','${fiore.Altezza}','${fiore.Periodo_Fioritura}','${fiore.Note}','${fiore.Colore}','${fiore.URL_Immagine}','${fiore.Famiglia_Appartenenza}','${fiore.Nome_Scientifico}')`;
     let sqlRequest = new sql.Request();
     sqlRequest.query(sqlInsert, (error, results) => {
       if (error) throw error;
