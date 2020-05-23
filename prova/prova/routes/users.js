@@ -8,8 +8,8 @@ const config = {
   database: 'bissoli.marco', 
 }
 
-router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
+router.get('/form', function(req, res, next) {
+  res.render('/');
 });
 
 router.get('/fiori', function(req, res, next) {
