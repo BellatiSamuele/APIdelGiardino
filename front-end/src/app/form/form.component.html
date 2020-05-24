@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html>
 <style>
+
+h1{
+  color: Blue;
+  margin-left: 450px;
+}
+
 input[type=text], select {
   width: 100%;
   padding: 12px 20px;
@@ -13,7 +19,7 @@ input[type=text], select {
 
 input[type=submit] {
   width: 100%;
-  background-color: #4CAF50;
+  background-color: #f0ffff;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -23,12 +29,12 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  background-color: #45a049;
+  background-color: #f0ffff;
 }
 
 div {
   border-radius: 5px;
-  background-color: #f2f2f2;
+  background-color: #f0ffff;
   padding: 20px;
 }
 
@@ -67,12 +73,13 @@ div.desc {
   margin-left: 5px;
 }
 </style>
+
 <body>
 
-<h3>Inserisci qui le informazioni del tuo Fiore!</h3>
+<h1>Inserisci qui le informazioni del tuo Fiore!</h1>
 
 <div>
-  <form>
+  <form color="	#f0ffff">
 	<label for="id">ID: </label>
 	<input type="text" name="ID" #newID>
 
@@ -90,32 +97,30 @@ div.desc {
 
     <label for="colore">Colore: </label>
     <select type="text" name="Colore" #newColore>
-      <option value="blu">Blue</option>
-      <option value="gialli">Giallo</option>
-      <option value="giallo-dorato">Giallo Dorato</option>
-      <option value="verde">Verde</option>
-      <option value="azzurro">Azzurro</option>
-      <option value="arancione">Arancione</option>
-      <option value="porpora">Porpora</option>
-      <option value="rosa">Rosa</option>
-      <option value="rosso">Rosso</option>
-      <option value="viola">Viola</option>
-      <option value="bianchi">Bianco</option>
+      <option value="Blu">Blu</option>
+      <option value="Giallo">Giallo</option>
+      <option value="Giallo Dorato">Giallo Dorato</option>
+      <option value="Verde">Verde</option>
+      <option value="Azzurro">Azzurro</option>
+      <option value="Arancione">Arancione</option>
+      <option value="Porpora">Porpora</option>
+      <option value="Rosa">Rosa</option>
+      <option value="Rosso">Rosso</option>
+      <option value="Viola">Viola</option>
+      <option value="Bianco">Bianco</option>
     </select>
 
-    <label for="url">URL immagine: </label>
+  <label for="url">URL immagine: </label>
 	<input type="text" name="URL_Immagine" #newUrl>
 
-    <label for="famiglia">Famiglia: </label>
+  <label for="famiglia">Famiglia: </label>
 	<input type="text" name="Famiglia_Appartenenza" #newFamiglia>
 
-    <label for="scient">Nome scientifico: </label>
+  <label for="scient">Nome scientifico: </label>
 	<input type="text" name="Nome_Scientifico" #newScient>
-
     <br>
     <br>
     <br>
-
 
     <button class="button" (click)="addFiore(newID, newNome,newAltezza, newPeriodo, newNote, newColore, newUrl, newFamiglia, newScient)">
     Conferma Dati
@@ -129,8 +134,8 @@ div.desc {
 
 
 <div class="gallery">
-  <a target="_blank" href="img_5terre.jpg">
-    <img src="img/Girasole.jpg" alt="Rosa" width="600" height="400">
+  <a target="_blank" href="assets/img/rosa.jpg">
+    <img src="assets/img/rosa.jpg" alt="Rosa" width="600" height="400">
   </a>
   <div class="desc">ID: 1</div>
   <div class="desc">Nome Comune: Rosa</div>
@@ -140,8 +145,8 @@ div.desc {
 </div>
 
 <div class="gallery">
-  <a target="_blank" href="img_5terre.jpg">
-    <img src="img_5terre.jpg" alt="Tulipano" width="600" height="400">
+  <a target="_blank" href="assets/img/Tulipano.jpg">
+    <img src="assets/img/Tulipano.jpg" alt="Tulipano" width="600" height="400">
   </a>
   <div class="desc">ID: 2</div>
   <div class="desc">Nome Comune: Tulipano</div>
@@ -151,8 +156,8 @@ div.desc {
 </div>
 
 <div class="gallery">
-  <a target="_blank" href="img_5terre.jpg">
-    <img src="img_5terre.jpg" alt="Girasole" width="600" height="400">
+  <a target="_blank" href="assets/img/Girasole.jpg">
+    <img src="assets/img/Girasole.jpg" alt="Girasole" width="600" height="400">
   </a>
   <div class="desc">ID: 3</div>
   <div class="desc">Nome Comune: Girasole</div>

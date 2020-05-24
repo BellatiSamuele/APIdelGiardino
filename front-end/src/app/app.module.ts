@@ -8,18 +8,22 @@ import { AppComponent } from './app.component';
 import { FormComponent } from './form/form.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
+import { ListaComponent } from './lista/lista.component';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
     AppComponent,
-    FormComponent
+    FormComponent,
+    ListaComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
     ReactiveFormsModule,
     AppRoutingModule,
-    HttpClientModule],
+    HttpClientModule,
+    NgbModule ],
   providers: [],
   bootstrap: [AppComponent]
 })

@@ -1,19 +1,18 @@
-import { Component, OnInit} from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import {
   FormBuilder,
   FormGroup
 } from '@angular/forms';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { Fiore } from './fiore.model';
+import { Fiore } from '../fiore.model';
+import { environment } from '../../environments/environment'
 
 @Component({
   selector: 'app-form',
   templateUrl: './form.component.html',
   styleUrls: ['./form.component.css']
 })
-
-
 export class FormComponent implements OnInit {
 
   constructor(private http: HttpClient) {
@@ -21,7 +20,6 @@ export class FormComponent implements OnInit {
   }
   ngOnInit() {
   }
-
 
   addFiore(newID: HTMLInputElement, newNome: HTMLInputElement, newAltezza: HTMLInputElement, newPeriodo: HTMLInputElement, newNote: HTMLInputElement, newColore: HTMLInputElement, newUrl: HTMLInputElement, newFamiglia: HTMLInputElement, newScient: HTMLInputElement): boolean {
 
@@ -37,8 +35,8 @@ export class FormComponent implements OnInit {
     newData.Nome_Scientifico = newScient.value;
 
     let headers = { headers: new HttpHeaders().set('Content-Type', 'application/json') };
-    this.http.post('https://3000-e59f24ec-1910-40c8-a6ad-d90b8331300b.ws-eu01.gitpod.io/users/inserisci', JSON.stringify(newData), headers).
-    subscribe(data=>console.log(data));
+    this.http.post(`${environment.urlServer}/users/inserisci`, JSON.stringify(newData), headers).
+      subscribe(data => console.log(data));
     return false;
   }
 }
