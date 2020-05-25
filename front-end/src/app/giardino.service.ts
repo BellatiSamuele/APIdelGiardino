@@ -11,11 +11,10 @@ export class GiardinoService {
 
   constructor(private http: HttpClient) { }
 
-  getFiore(id: string) {
-    const url = `${environment.urlServer}/users/fiore/${id}`;
+  getFiore(ID: string) {
+    const url = `${environment.urlServer}/users/fiore/${ID}`;
     const headers = new HttpHeaders({Authorization: environment.urlServer});
 
     return this.http.get(url, { headers });
   }
-
 }

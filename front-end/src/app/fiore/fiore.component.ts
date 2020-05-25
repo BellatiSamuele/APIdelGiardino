@@ -32,7 +32,7 @@ export class FioreComponent implements OnInit {
     let fioreId = params.get('ID');
     console.log (fioreId);
 
-    this.giardinoServiceObs = this.service.getFiore(fioreId);
+    this.giardinoServiceObs = this.service.getFiore(fioreId) ;
     this.giardinoServiceObs.subscribe((data)=>this.fiore = data)
 
   }

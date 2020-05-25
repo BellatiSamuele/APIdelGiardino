@@ -9,10 +9,10 @@ import { environment } from '../../environments/environment'
   templateUrl: './lista.component.html',
   styleUrls: ['./lista.component.css']
 })
+
 export class ListaComponent {
   obsUnit: Observable<Fiore[]>;
   data: Fiore[];
-
   constructor(private http: HttpClient) { }
   getLista(): void {
 

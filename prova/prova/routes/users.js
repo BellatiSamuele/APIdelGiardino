@@ -12,7 +12,6 @@ router.get('/fiori', function(req, res, next) {
   sql.connect(config, err => {
     if(err) console.log(err);  
     
-    
     let sqlRequest = new sql.Request();  
     sqlRequest.query('select * from dbo.Fiore', (err, result) => {
         if (err) console.log(err); 
@@ -24,6 +23,7 @@ router.get('/fiori', function(req, res, next) {
 router.get('fiore/:ID', function (req, res, next) {
     sql.connect(config, err => {
     if(err) console.log(err);
+    
     let sqlRequest = new sql.Request();
     sqlRequest.query(`SELECT * FROM dbo.Fiore WHERE ID = '${req.params.ID}'`, (err, result) => {
         if (err) console.log(err);
