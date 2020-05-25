@@ -10,12 +10,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { ListaComponent } from './lista/lista.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { FioreComponent } from './fiore/fiore.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FormComponent,
-    ListaComponent
+    ListaComponent,
+    FioreComponent
   ],
   imports: [
     BrowserModule,

@@ -12,6 +12,7 @@ import { environment } from '../../environments/environment'
 export class ListaComponent {
   obsUnit: Observable<Fiore[]>;
   data: Fiore[];
+
   constructor(private http: HttpClient) { }
   getLista(): void {
 

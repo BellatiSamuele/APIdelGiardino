@@ -8,10 +8,6 @@ const config = {
   database: 'bissoli.marco', 
 }
 
-router.get('/form', function(req, res, next) {
-  res.render('/');
-});
-
 router.get('/fiori', function(req, res, next) {
   sql.connect(config, err => {
     if(err) console.log(err);  
@@ -25,13 +21,13 @@ router.get('/fiori', function(req, res, next) {
   });
 });
 
-router.get('/fiore/:ID', function (req, res, next) {
+router.get('fiore/:ID', function (req, res, next) {
     sql.connect(config, err => {
     if(err) console.log(err);
     let sqlRequest = new sql.Request();
-    sqlRequest.query(`SELECT * FROM [Fiore] WHERE ID = '${req.params.ID}'`, (err, result) => {
+    sqlRequest.query(`SELECT * FROM dbo.Fiore WHERE ID = '${req.params.ID}'`, (err, result) => {
         if (err) console.log(err);
-        res.send(result.recordset)
+        res.send(result.recordset[0])
     });
   });
 });
