@@ -1,52 +1,164 @@
-<form>
-	<h3>Aggiungi un fiore!</h3>
-	<div>
-		<label for="id">ID: </label>
-		<input name="ID" #newID>
-  </div>
+<!DOCTYPE html>
+<html>
+<style>
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
 
-  <div>
-		<label for="nome_comune">Nome comune: </label>
-		<input name="Nome_Comune" #newNome>
-  </div>
+input[type=submit] {
+  width: 100%;
+  background-color: #e0ffff;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
 
-  <div>
-		<label for="altezza">Altezza: </label>
-		<input name="Altezza" #newAltezza>
-  </div>
+input[type=submit]:hover {
+  background-color: #e0ffff;
+}
 
-  <div>
-		<label for="periodo">Periodo di fioritura: </label>
-		<input name="Periodo_Fioritura" #newPeriodo>
-  </div>
+div {
+  border-radius: 5px;
+  background-color: #e0ffff;
+  padding: 20px;
+}
 
-  <div>
-		<label for="note">Note: </label>
-		<input name="Note" #newNote>
-  </div>
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
 
-  <div>
-		<label for="colore">Colore: </label>
-		<input name="Colore" #newColore>
-  </div>
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 280px;
+}
 
-  <div>
-		<label for="url">URL immagine: </label>
-		<input name="URL_Immagine" #newUrl>
-  </div>
+div.gallery:hover {
+  border: 1px solid #777;
+}
 
-  <div>
-		<label for="famiglia">Famiglia: </label>
-		<input name="Famiglia_Appartenenza" #newFamiglia>
-  </div>
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
 
-  <div>
-		<label for="scient">Nome scientifico: </label>
-		<input name="Nome_Scientifico" #newScient>
-  </div>
+div.desc {
+  padding: 5px;
+  margin-top: 3px;
+  margin-left: 5px;
+}
+</style>
+<body>
+
+<h1>Inserisci qui le informazioni del tuo Fiore!</h1>
+
+<div>
+  <form>
+	<label for="id">ID: </label>
+	<input type="text" name="ID" #newID>
+
+	<label for="nome_comune">Nome comune: </label>
+	<input type="text" name="Nome_Comune" #newNome>
+
+  <label for="altezza">Altezza: </label>
+	<input type="text" name="Altezza" #newAltezza>
+
+  <label for="periodo">Periodo di fioritura: </label>
+	<input type="text" name="Periodo_Fioritura" #newPeriodo>
+
+  <label for="note">Note: </label>
+	<input type="text" name="Note" #newNote>
+
+    <label for="colore">Colore: </label>
+    <select type="text" name="Colore" #newColore>
+      <option value="Blu">Blu</option>
+      <option value="Giallo">Giallo</option>
+      <option value="Giallo Dorato">Giallo Dorato</option>
+      <option value="Verde">Verde</option>
+      <option value="Azzurro">Azzurro</option>
+      <option value="Arancione">Arancione</option>
+      <option value="Porpora">Porpora</option>
+      <option value="Rosa">Rosa</option>
+      <option value="Rosso">Rosso</option>
+      <option value="Viola">Viola</option>
+      <option value="Bianco">Bianco</option>
+    </select>
+
+    <label for="url">URL immagine: </label>
+	<input type="text" name="URL_Immagine" #newUrl>
+
+    <label for="famiglia">Famiglia: </label>
+	<input type="text" name="Famiglia_Appartenenza" #newFamiglia>
+
+    <label for="scient">Nome scientifico: </label>
+	<input type="text" name="Nome_Scientifico" #newScient>
+
+    <br>
+    <br>
+    <br>
 
 
-		<button (click)="addFiore(newID, newNome,newAltezza, newPeriodo, newNote, newColore, newUrl, newFamiglia, newScient)">
-  Inserisci
+    <button class="button" (click)="addFiore(newID, newNome,newAltezza, newPeriodo, newNote, newColore, newUrl, newFamiglia, newScient)">
+    Conferma Dati
   </button>
-</form>
+  </form>
+</div>
+
+<br>
+<br>
+<br>
+
+
+<div class="gallery">
+  <a target="_blank" href="assets/img/rosa.jpg">
+    <img src="assets/img/rosa.jpg" alt="Rosa" width="600" height="400">
+  </a>
+  <div class="desc">ID: 1</div>
+  <div class="desc">Nome Comune: Rosa</div>
+  <div class="desc">Colore: Rosa</div>
+  <div class="desc">Nome famiglia: Rosaceae</div>
+  <div class="desc">Nome scientifico: Rosa</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="assets/img/Tulipano.jpg">
+    <img src="assets/img/Tulipano.jpg" alt="Tulipano" width="600" height="400">
+  </a>
+  <div class="desc">ID: 2</div>
+  <div class="desc">Nome Comune: Tulipano</div>
+  <div class="desc">Colore: Rosso</div>
+  <div class="desc">Nome famiglia: Liliaceae</div>
+  <div class="desc">Nome scientifico: Tulipa</div>
+</div>
+
+<div class="gallery">
+  <a target="_blank" href="assets/img/Girasole.jpg">
+    <img src="assets/img/Girasole.jpg" alt="Girasole" width="600" height="400">
+  </a>
+  <div class="desc">ID: 3</div>
+  <div class="desc">Nome Comune: Girasole</div>
+  <div class="desc">Colore: Giallo</div>
+  <div class="desc">Nome famiglia: Magnoliopsida</div>
+  <div class="desc">Nome scientifico: Helianthus annuus</div>
+</div>
+</body>
+</html>
