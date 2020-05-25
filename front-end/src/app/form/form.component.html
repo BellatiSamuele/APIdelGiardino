@@ -1,89 +1,5 @@
 <!DOCTYPE html>
 <html>
-<style>
-
-<<<<<<< HEAD
-h1{
-  color: Blue;
-  margin-left: 450px;
-}
-
-input[type=text], select {
-  width: 100%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
-}
-
-input[type=submit] {
-  width: 100%;
-  background-color: #f0ffff;
-  color: white;
-  padding: 14px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type=submit]:hover {
-  background-color: #f0ffff;
-}
-
-div {
-  border-radius: 5px;
-  background-color: #f0ffff;
-  padding: 20px;
-}
-
-.button {
-  background-color: #4CAF50;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-}
-
-div.gallery {
-  margin: 5px;
-  border: 1px solid #ccc;
-  float: left;
-  width: 280px;
-}
-
-div.gallery:hover {
-  border: 1px solid #777;
-}
-
-div.gallery img {
-  width: 100%;
-  height: auto;
-}
-
-div.desc {
-  padding: 5px;
-  margin-top: 3px;
-  margin-left: 5px;
-}
-</style>
-
-<body>
-
-<h1>Inserisci qui le informazioni del tuo Fiore!</h1>
-
-<div>
-  <form color="	#f0ffff">
-=======
-
-</style>
 <body>
 
 
@@ -94,28 +10,19 @@ div.desc {
 
 <div>
   <form>
->>>>>>> 3927cb147a352c280c83011bdf890722d579693a
 	<label for="id">ID: </label>
 	<input type="text" name="ID" #newID>
 
 	<label for="nome_comune">Nome comune: </label>
 	<input type="text" name="Nome_Comune" #newNome>
 
-<<<<<<< HEAD
-	<label for="altezza">Altezza: </label>
-=======
   <label for="altezza">Altezza: </label>
->>>>>>> 3927cb147a352c280c83011bdf890722d579693a
 	<input type="text" name="Altezza" #newAltezza>
 
   <label for="periodo">Periodo di fioritura: </label>
 	<input type="text" name="Periodo_Fioritura" #newPeriodo>
 
-<<<<<<< HEAD
-	<label for="note">Note: </label>
-=======
   <label for="note">Note: </label>
->>>>>>> 3927cb147a352c280c83011bdf890722d579693a
 	<input type="text" name="Note" #newNote>
 
     <label for="colore">Colore: </label>
@@ -133,16 +40,6 @@ div.desc {
       <option value="Bianco">Bianco</option>
     </select>
 
-<<<<<<< HEAD
-  <label for="url">URL immagine: </label>
-	<input type="text" name="URL_Immagine" #newUrl>
-
-  <label for="famiglia">Famiglia: </label>
-	<input type="text" name="Famiglia_Appartenenza" #newFamiglia>
-
-  <label for="scient">Nome scientifico: </label>
-	<input type="text" name="Nome_Scientifico" #newScient>
-=======
     <label for="url">URL immagine: </label>
 	<input type="text" name="URL_Immagine" #newUrl>
 
@@ -152,15 +49,10 @@ div.desc {
     <label for="scient">Nome scientifico: </label>
 	<input type="text" name="Nome_Scientifico" #newScient>
 
->>>>>>> 3927cb147a352c280c83011bdf890722d579693a
     <br>
     <br>
     <br>
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 3927cb147a352c280c83011bdf890722d579693a
     <button class="button" (click)="addFiore(newID, newNome,newAltezza, newPeriodo, newNote, newColore, newUrl, newFamiglia, newScient)">
     Conferma Dati
   </button>
@@ -171,69 +63,42 @@ div.desc {
 <br>
 <br>
 
-<<<<<<< HEAD
-=======
 <div class="esempi"><b>Esempi di Fiori inseriti dai nostri utenti:</b></div>
 
 <br>
 <br>
->>>>>>> 3927cb147a352c280c83011bdf890722d579693a
 
 <div class="gallery">
   <a target="_blank" href="assets/img/rosa.jpg">
     <img src="assets/img/rosa.jpg" alt="Rosa" width="600" height="400">
   </a>
-<<<<<<< HEAD
-  <div class="desc">ID: 1</div>
-  <div class="desc">Nome Comune: Rosa</div>
-  <div class="desc">Colore: Rosa</div>
-  <div class="desc">Nome famiglia: Rosaceae</div>
-  <div class="desc">Nome scientifico: Rosa</div>
-=======
   <div class="desc"><b>ID:</b> 1</div>
   <div class="desc"><b>Nome Comune:</b> Rosa</div>
   <div class="desc"><b>Colore:</b> Rosa</div>
   <div class="desc"><b>Nome famiglia:</b> Rosaceae</div>
   <div class="desc"><b>Nome scientifico:</b> Rosa</div>
->>>>>>> 3927cb147a352c280c83011bdf890722d579693a
 </div>
 
 <div class="gallery">
   <a target="_blank" href="assets/img/Tulipano.jpg">
     <img src="assets/img/Tulipano.jpg" alt="Tulipano" width="600" height="400">
   </a>
-<<<<<<< HEAD
-  <div class="desc">ID: 2</div>
-  <div class="desc">Nome Comune: Tulipano</div>
-  <div class="desc">Colore: Rosso</div>
-  <div class="desc">Nome famiglia: Liliaceae</div>
-  <div class="desc">Nome scientifico: Tulipa</div>
-=======
   <div class="desc"><b>ID:</b> 2</div>
   <div class="desc"><b>Nome Comune:</b> Tulipano</div>
   <div class="desc"><b>Colore:</b> Rosso</div>
   <div class="desc"><b>Nome famiglia:</b> Liliaceae</div>
   <div class="desc"><b>Nome scientifico:</b> Tulipa</div>
->>>>>>> 3927cb147a352c280c83011bdf890722d579693a
 </div>
 
 <div class="gallery">
   <a target="_blank" href="assets/img/Girasole.jpg">
     <img src="assets/img/Girasole.jpg" alt="Girasole" width="600" height="400">
   </a>
-<<<<<<< HEAD
-  <div class="desc">ID: 3</div>
-  <div class="desc">Nome Comune: Girasole</div>
-  <div class="desc">Colore: Giallo</div>
-  <div class="desc">Nome famiglia: Magnoliopsida</div>
-  <div class="desc">Nome scientifico: Helianthus annuus</div>
-=======
   <div class="desc"><b>ID:</b> 3</div>
   <div class="desc"><b>Nome Comune:</b> Girasole</div>
   <div class="desc"><b>Colore:</b> Giallo</div>
   <div class="desc"><b>Nome famiglia:</b> Magnoliopsida</div>
   <div class="desc"><b>Nome scientifico:</b> Helianthus annuus</div>
->>>>>>> 3927cb147a352c280c83011bdf890722d579693a
 </div>
 </body>
 </html>
