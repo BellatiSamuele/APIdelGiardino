@@ -1,4 +1,4 @@
-h1{
+h2{
   font-family: Georgia, serif;
   text-align: center;
 }
@@ -52,7 +52,7 @@ div.gallery {
   margin: 5px;
   border: 1px solid #ccc;
   float: left;
-  width: 280px;
+  width: 300px;
 }
 
 div.gallery:hover {
@@ -75,3 +75,11 @@ div.esempio{
   font-family: Georgia, serif;
 }
 
+footer {
+  font-family: Georgia, serif;
+  text-align: center;
+  padding: 10px;
+  background-color: rgb(105, 184, 221);
+  color:black;
+  margin-top: 600px;
+}
