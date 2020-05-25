@@ -20,7 +20,18 @@ router.get('/fiori', function(req, res, next) {
     let sqlRequest = new sql.Request();  
     sqlRequest.query('select * from dbo.Fiore', (err, result) => {
         if (err) console.log(err); 
-        res.send(result);  
+        res.send(result.recordset);  
+    });
+  });
+});
+
+router.get('/fiore/:ID', function (req, res, next) {
+    sql.connect(config, err => {
+    if(err) console.log(err);
+    let sqlRequest = new sql.Request();
+    sqlRequest.query(`SELECT * FROM [Fiore] WHERE ID = '${req.params.ID}'`, (err, result) => {
+        if (err) console.log(err);
+        res.send(result.recordset)
     });
   });
 });
@@ -42,6 +53,5 @@ router.post('/inserisci', function (req, res, next) {
     });
   })
 });
-
 
 module.exports = router;

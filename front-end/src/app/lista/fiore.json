@@ -1,0 +1,56 @@
+{
+  "recordsets": [
+    [
+      {
+        "ID": "1",
+        "Nome_Comune": "margherita",
+        "Altezza": "30cm",
+        "Colore": "bianchi",
+        "Periodo_Fioritura": "giugno",
+        "Note": "è basso",
+        "URL_Immagine": "123456789",
+        "Famiglia_Appartenenza": "fiori belli",
+        "Nome_Scientifico": "marge"
+      },
+      {
+        "ID": "43",
+        "Nome_Comune": "342",
+        "Altezza": "24",
+        "Colore": "gg",
+        "Periodo_Fioritura": "gg",
+        "Note": "gg",
+        "URL_Immagine": "gg",
+        "Famiglia_Appartenenza": "gg",
+        "Nome_Scientifico": "gg"
+      }
+    ]
+  ],
+  "recordset": [
+    {
+      "ID": "1",
+      "Nome_Comune": "margherita",
+      "Altezza": "30cm",
+      "Colore": "bianchi",
+      "Periodo_Fioritura": "giugno",
+      "Note": "è basso",
+      "URL_Immagine": "123456789",
+      "Famiglia_Appartenenza": "fiori belli",
+      "Nome_Scientifico": "marge"
+    },
+    {
+      "ID": "43",
+      "Nome_Comune": "342",
+      "Altezza": "24",
+      "Colore": "gg",
+      "Periodo_Fioritura": "gg",
+      "Note": "gg",
+      "URL_Immagine": "gg",
+      "Famiglia_Appartenenza": "gg",
+      "Nome_Scientifico": "gg"
+    }
+  ],
+  "output": {},
+  "rowsAffected": [
+    2
+  ]
+}
