@@ -20,13 +20,14 @@ router.get('/fiori', function(req, res, next) {
   });
 });
 
-router.get('fiore/:ID', function (req, res, next) {
+router.get('/fiore/:ID', function (req, res, next) {
     sql.connect(config, err => {
     if(err) console.log(err);
-    
+    console.log(req.params.ID);
     let sqlRequest = new sql.Request();
-    sqlRequest.query(`SELECT * FROM dbo.Fiore WHERE ID = '${req.params.ID}'`, (err, result) => {
+    sqlRequest.query(`SELECT * FROM dbo.[Fiore] WHERE ID = '${req.params.ID}'`, (err, result) => {
         if (err) console.log(err);
+        
         res.send(result.recordset[0])
     });
   });
