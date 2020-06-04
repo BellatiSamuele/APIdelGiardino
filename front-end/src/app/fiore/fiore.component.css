@@ -24,4 +24,29 @@ div.desc {
 
 b{
   font-size: 15px;
+
+}
+
+#myDIV {
+  text-align: center;
+  padding: 10px;
+  width: 450px;
+  background-color: rgb(193, 229, 250);
+  color: black;
+  animation: mymove 5s infinite;
+  margin-left: 37%;
+  border-radius: 15px;
+}
+
+@keyframes mymove {
+  50% {box-shadow: 10px 20px 30px rgb(45, 114, 243);}
+}
+
+footer {
+  font-family: Georgia, serif;
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(105, 184, 221);
+  color:black;
+  margin-top: 600px;
 }

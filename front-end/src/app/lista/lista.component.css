@@ -4,6 +4,7 @@ div.gallery {
   float: left;
   width: 300px;
   background-color: rgb(195, 233, 240);
+  border-radius: 10px;
 }
 
 div.gallery:hover {
@@ -19,4 +20,13 @@ div.desc {
   padding: 5px;
   margin-top: 3px;
   margin-left: 5px;
+}
+
+footer {
+  font-family: Georgia, serif;
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(105, 184, 221);
+  color:black;
+  margin-top: 600px;
 }

@@ -78,6 +78,7 @@ div.gallery {
   border: 1px solid #ccc;
   float: left;
   width: 300px;
+  border-radius: 15px;
 }
 
 div.gallery:hover {
@@ -94,6 +95,7 @@ div.desc {
   padding: 5px;
   margin-top: 3px;
   margin-left: 5px;
+
 }
 
 div.esempio{
