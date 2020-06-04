@@ -52,10 +52,18 @@ input[type=submit]:hover {
   background-color: #e0ffff;
 }
 
+form{
+  width: 40%;
+  margin-left: 30%;
+  padding: 10px;
+}
+
 div {
+  width: 60%;
+  margin-left: 20%;
   font-family: Georgia, serif;
   border-radius: 5px;
-  background-color: #e0ffff;
+  background-color: #d0f6ff;
   padding: 20px;
 }
 
