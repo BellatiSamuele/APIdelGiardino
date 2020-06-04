@@ -1,27 +1,24 @@
-<div class="row">
-	<div class="col-sm-6 col-md-4" *ngFor="let fiore of data">
-		<div class="thumbnail">
-			<div class="content">
-				<div class="caption">
-					<h3>
+<div class="col-sm-6 col-md-4" *ngFor="let fiore of data">
+        <br>
+        <br>
+        <br>
+				<div class="gallery">
+					<div class="desc">
 						<b>Nome:</b> <a [routerLink]="['/fiore', fiore.ID]"> {{ fiore.Nome_Comune }}</a>
-					</h3>
+					</div>
 					<br>
         </div>
-				<div class="attribution">
-					<h4 class="display-4"><b>Altezza:</b> {{fiore.Altezza}}</h4>
+				<div class="gallery">
+					<div class="desc"><b>Altezza:</b> {{fiore.Altezza}}</div>
 
-					<h4 class="display-4"><b>Periodo di fioritura:</b> {{fiore.Periodo_Fioritura}}</h4>
+					<div class="desc"><b>Periodo di fioritura:</b> {{fiore.Periodo_Fioritura}}</div>
 
-					<h4 class="display-4"><b>Note:</b> {{fiore.Note}}</h4>
+					<div class="desc"><b>Note:</b> {{fiore.Note}}</div>
 
-					<h4 class="display-4"><b>Colore:</b> {{fiore.Colore}}</h4>
+					<div class="desc"><b>Colore:</b> {{fiore.Colore}}</div>
 
-					<h4 class="display-4"><b>Famiglia</b> {{fiore.Famiglia_Appartenenza}}</h4>
+					<div class="desc"><b>Famiglia</b> {{fiore.Famiglia_Appartenenza}}</div>
 
-					<h4 class="display-4"><b>Nome scientifico</b> {{fiore.Nome_Scientifico}}</h4>
+					<div class="desc"><b>Nome scientifico</b> {{fiore.Nome_Scientifico}}</div>
 				</div>
-			</div>
-		</div>
 	</div>
-</div>

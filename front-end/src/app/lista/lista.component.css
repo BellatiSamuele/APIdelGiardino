@@ -1,0 +1,22 @@
+div.gallery {
+  margin: 5px;
+  border: 1px solid rgb(69, 145, 231);
+  float: left;
+  width: 300px;
+  background-color: rgb(195, 233, 240);
+}
+
+div.gallery:hover {
+  border: 1px solid rgb(77, 178, 196);
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+div.desc {
+  font-family: Georgia, serif;
+  padding: 5px;
+  margin-top: 3px;
+  margin-left: 5px;
+}
